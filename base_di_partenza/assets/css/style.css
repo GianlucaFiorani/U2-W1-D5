@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  color: #191919;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+h1 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6.3rem;
+  width: max-content;
+}
+h3 {
+  font-size: 1.5rem;
+  color: lightgray;
+  font-family: "Roboto";
+  font-weight: 600;
+}
+h4 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+a {
+  font-family: "Roboto";
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+button {
+  border-radius: 20px;
+  background-color: #191919;
+  color: white;
+  padding: 0.5rem 1rem;
+}
+.spacer {
+  min-width: 70px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.container img {
+  border-radius: 50%;
+}
+
+/* HEADER */
+
+header,
+#yellowBanner {
+  display: flex;
+  background-color: #ffc017;
+}
+header {
+  width: 100%;
+  position: fixed;
+  align-items: baseline;
+  border-bottom: solid 1px black;
+  padding-block: 1.4rem;
+  z-index: 1;
+}
+header .container {
+  margin-left: auto;
+}
+
+main {
+  top: 83.92px;
+  position: relative;
+}
+/* BANNER */
+#yellowBanner {
+  border-bottom: solid 1px black;
+}
+#bannerSvg {
+  margin-left: auto;
+  width: 590px;
+}
+#bannerText {
+  padding-block: 5.5rem;
+}
+#bannerText p {
+  margin-block: 1rem;
+  font-size: 1.5rem;
+}
+#bannerText button {
+  font-size: 1.2rem;
+  padding-inline: 1.2rem;
+  margin-top: 1rem;
+  width: 210px;
+}
+
+/* TRENDING */
+#trendingContainer {
+  display: flex;
+  border-bottom: solid 1px lightgray;
+  padding-block: 1.5rem;
+}
+#trendingCardsSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.trendingCard {
+  display: flex;
+  width: 33%;
+  margin-bottom: 1.5rem;
+}
+.trendingCardText {
+  padding: 0.5rem;
+  margin-left: 10px;
+}
+
+/* SECTION */
+#sectionContainer {
+  display: flex;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+article {
+  display: flex;
+  margin-block: 1.5rem;
+  justify-content: space-between;
+}
+article div p img {
+  border-radius: 50%;
+}
+article div h2 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+article div p {
+  color: grey;
+}
+/* ASIDE */
+
+aside {
+  height: 100%;
+  display: flex;
+  position: sticky;
+  top: 83.92px;
+  padding-top: 1.5rem;
+  padding-inline: 2rem;
+}
+.asideBtn {
+  display: flex;
+  flex-wrap: wrap;
+}
+aside button {
+  border-radius: 0;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: gray;
+  margin: 0.2rem;
+  width: 30%;
+  margin-top: 1rem;
+}
