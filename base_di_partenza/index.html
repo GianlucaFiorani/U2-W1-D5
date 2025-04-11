@@ -32,7 +32,7 @@
           <p>Discover stories, thinking, and expertise from writers on any topic.</p>
           <button>Start reading</button>
         </div>
-        <div id="bannerSvg">
+        <!-- <div id="bannerSvg"> -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 585 462"
@@ -8248,18 +8248,35 @@
   <script>
     const header = document.querySelector("header");
     const button = document.querySelector("header button");
+    const path = document.querySelectorAll("path");
+   
+  
     const scroll = function () {
       let pageY = window.pageYOffset;
       if (pageY > 350) {
         header.classList.add("headerColor");
         button.classList.add("btnColor");
+       
       } else {
         header.classList.remove("headerColor");
         button.classList.remove("btnColor");
       }
     };
+
+    const opacityM = function ()
+    {
+      let randNum = Math.floor(Math.random() * path.length);
+      let pathNow = path[randNum]
+      if(pathNow.classList.contains("pathOpacity")){
+        pathNow.classList.remove("pathOpacity");
+      } else {
+        pathNow.classList.add("pathOpacity");
+      }
+    };
+  
     setInterval(() => {
+      opacityM()
       scroll();
-    }, 400);
+    }, 20);
   </script>
 </html>

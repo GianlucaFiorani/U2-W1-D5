@@ -167,6 +167,7 @@ aside button {
   margin-top: 1rem;
 }
 
+/* TRANSITION */
 .headerColor {
   background-color: rgb(252, 252, 252);
   transition: all 0.5s;
@@ -174,4 +175,7 @@ aside button {
 .btnColor {
   background-color: #1a8917;
   transition: all 0.5s;
+}
+.pathOpacity {
+  opacity: 0;
 }
