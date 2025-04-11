@@ -8238,10 +8238,28 @@
               <button>Productivity</button>
               <button>Politics</button>
             </div>
+            <div>• Help • Status • Writers • Blog • Careers • Privacy • Terms • About • Knowable</div>
           </div>
           <div class="spacer"></div>
         </aside>
       </div>
     </main>
   </body>
+  <script>
+    const header = document.querySelector("header");
+    const button = document.querySelector("header button");
+    const scroll = function () {
+      let pageY = window.pageYOffset;
+      if (pageY > 350) {
+        header.classList.add("headerColor");
+        button.classList.add("btnColor");
+      } else {
+        header.classList.remove("headerColor");
+        button.classList.remove("btnColor");
+      }
+    };
+    setInterval(() => {
+      scroll();
+    }, 400);
+  </script>
 </html>

@@ -35,6 +35,8 @@ button {
   background-color: #191919;
   color: white;
   padding: 0.5rem 1rem;
+  border-color: transparent;
+  transition: all 0.5s;
 }
 .spacer {
   min-width: 70px;
@@ -50,10 +52,10 @@ button {
 
 /* HEADER */
 
-header,
-#yellowBanner {
+header {
   display: flex;
   background-color: #ffc017;
+  transition: all 0.5s;
 }
 header {
   width: 100%;
@@ -69,10 +71,13 @@ header .container {
 
 main {
   top: 83.92px;
+  box-shadow: 0px 70px #ffc017 inset;
   position: relative;
 }
 /* BANNER */
 #yellowBanner {
+  display: flex;
+  background-color: #ffc017;
   border-bottom: solid 1px black;
 }
 #bannerSvg {
@@ -160,4 +165,13 @@ aside button {
   margin: 0.2rem;
   width: 30%;
   margin-top: 1rem;
+}
+
+.headerColor {
+  background-color: rgb(252, 252, 252);
+  transition: all 0.5s;
+}
+.btnColor {
+  background-color: #1a8917;
+  transition: all 0.5s;
 }
